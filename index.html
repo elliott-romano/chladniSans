@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chladni</title>
+	<link rel="icon" type="png" href="favicon.png">
+	<link rel="stylesheet" href="style.css"></style>
+</head>
+<body>
+	<div class="container">
+		<div class="content" onclick="focus()">
+			<video autoplay loop muted src="videos/c.mp4" data-index="0"></video>
+			<video autoplay loop muted src="videos/h.mp4" data-index="1"></video>
+			<video autoplay loop muted src="videos/l.mp4" data-index="2"></video>
+			<video autoplay loop muted src="videos/a.mp4" data-index="3"></video>
+			<video autoplay loop muted src="videos/d.mp4" data-index="4"></video>
+			<video autoplay loop muted src="videos/n.mp4" data-index="5"></video>
+			<video autoplay loop muted src="videos/i.mp4" data-index="6"></video>
+			<div id="cursor"></div>
+		</div>
+
+		<div class="controls">
+			<button onclick="empty()"><svg viewBox="0 0 72 72"><polygon points="58.274 20.09 51.91 13.726 36 29.636 20.09 13.726 13.726 20.09 29.636 36 13.726 51.91 20.09 58.274 36 42.364 51.91 58.274 58.274 51.91 42.364 36 58.274 20.09"/></svg></button>
+			<button onclick="sizeDown()"><svg viewBox="0 0 72 72"><rect x="9" y="31.5" width="54" height="9"/></svg></button>
+			<button onclick="sizeUp()"><svg viewBox="0 0 72 72"><polygon points="63 31.5 40.5 31.5 40.5 9 31.5 9 31.5 31.5 9 31.5 9 40.5 31.5 40.5 31.5 63 40.5 63 40.5 40.5 63 40.5 63 31.5"/></svg></button>
+			  <!-- Add this button for triggering the modal -->
+ 			 <button onclick="openModal()">Info</button>
+		</div>
+
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="closeModal()">&times;</span>
+			  <h2>Info</h2>
+			  <br>
+			  <p>The German scientist Ernst Chladni was one of the pioneers of experimental acoustics. His research on different 
+				kinds of vibrations served as the basis for the scientific understanding of sound that later emerged in the 19th century.
+			</p>
+				<br>
+				<p>One of Chladni's inventions was a technique to study the motions of vibrating plates. Starting with a metal plate whose surface had been lightly sprinkled with sand, he found that bowing it produced characteristic patterns that could be related to the physical dimensions of the plate. “Chladni's Plates”, as they came to be called, provided an early way to visualize the effects of vibrations on mechanical surfaces. Chladni was even able to produce a formula that 
+					successfully predicted the patterns found on vibrating circular plates. The success of Chladni's research, combined with the popularity of his many public demonstrations, did much to improve the standing of acoustics during his lifetime, and inspired many of the acoustic researchers who later extended his work.
+				</p>
+				<br>
+				<p>Chladni Sans is a motion-based typeface that utilises Chladni's technique of vibrating plates covered in sand at various frequencies to reveal the complex patterns hidden behind the sounds we hear.</p>
+				<br>
+				<p>Each letterform was created in sand on a metal plate affixed to a speaker. Once the letterform was sculpted, the plate was sent a signal of varying frequencies and waveforms, causing a transformation from letter to pattern
+				(also known as Chladni figures). Chladni is comprised of several tunings: 440Hz, 900Hz, & 1100Hz. Each Tuning reveals a variant of Chladni's figures, allowing for greater randomness and variation in the transformation from letter to pattern.
+				</p>
+
+			</div>
+		  </div>
+
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
