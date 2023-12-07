@@ -45,7 +45,7 @@ body {
 	animation: cursor .5s steps(1) infinite alternate;
 	background-color: white;
 	width: calc(var(--size) / 20);
-	height: 20vh;
+	height: calc(2*var(--size));
 }
 @keyframes cursor {
 	0% {
